@@ -75,3 +75,35 @@ nav {
 .green {
     color: #6EAB36;
 }
+.secondText{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 180vh;
+}
+
+.healthcare {
+    font-size: 36px;
+    padding-top: 14px 0;
+}
+.doctor{
+    position: relative;
+}
+.vector,.doctor-img{
+    width: 400px
+}
+
+.second-main,.video-player{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+
+.vector{
+    position: absolute;
+    z-index: -1;
+    top: 70px;
+
+}
