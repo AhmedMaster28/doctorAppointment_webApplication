@@ -236,14 +236,15 @@ nav {
 .num99 {
     text-align: center;
 }
-.before{
-    display:block
+
+.before {
+    display: block
 }
 
-.Started{
+.Started {
     color: white;
     font-weight: 600;
-  background-color: #007E85;
+    background-color: #007E85;
     border: none;
     border-radius: 34px;
     font-size: 19px;
@@ -251,11 +252,12 @@ nav {
     padding: 8px 35px;
 }
 
-.btnn{
+.btnn {
     display: flex;
     gap: 34px
 }
-.white{
+
+.white {
     background-color: white;
     color: #007E85;
 }
@@ -420,11 +422,12 @@ nav {
     }
 }
 
-@media only screen and (max-width:773px) and (min-width:760px){
-    .numbers-main{
+@media only screen and (max-width:773px) and (min-width:760px) {
+    .numbers-main {
         gap: 220px
     }
 }
+
 @media only screen and (max-width: 760px) and (min-width:550px) {
     .secondText {
         /* width: 78vh; */
@@ -501,21 +504,22 @@ nav {
         align-items: center;
     }
 
-    .numbers-main{
+    .numbers-main {
         gap: 140px;
     }
-    
-.before{
-    display: none;
-}
+
+    .before {
+        display: none;
+    }
 }
 
 
 @media only screen and (max-width:550px) and (min-width:475px) {
 
-.before{
-    display: none;
-}
+    .before {
+        display: none;
+    }
+
     .secondText {
         /* width: 78vh; */
         margin-top: 104px;
@@ -595,7 +599,7 @@ nav {
         flex-direction: column;
     }
 
-    .numbers-main{
+    .numbers-main {
         gap: 240px;
     }
 }
@@ -693,7 +697,8 @@ nav {
     .appointment {
         flex-direction: column;
     }
-    .numbers-main{
+
+    .numbers-main {
         gap: 220px;
     }
 }
