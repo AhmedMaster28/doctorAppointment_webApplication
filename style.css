@@ -262,6 +262,24 @@ nav {
     color: #007E85;
 }
 
+.build-img{
+    width: 100%;
+}
+
+.get-head,.head-text,.head-contact{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.get-head,.head-contact{
+    color: black;
+    font-weight: 600;
+}
+/* 
+.label{
+    display: block;
+} */
 
 
 
