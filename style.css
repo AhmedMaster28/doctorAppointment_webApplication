@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.main {
+    width: 100%;
+}
+
 body {
     background-color: rgb(236, 236, 236);
 }
@@ -262,27 +266,165 @@ nav {
     color: #007E85;
 }
 
-.build-img{
+.build-img {
     width: 100%;
 }
 
-.get-head,.head-text,.head-contact{
+.reason-heading {
+    color: #007E85;
+    font-weight: 700;
+}
+
+.reason-main {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 79px;
+    margin-left: 113px;
+
+}
+
+
+.reason-img>img {
+    width: 430px;
+}
+
+.get-head,
+.head-text,
+.head-contact {
     text-align: center;
     margin-top: 30px;
-    
+
 }
 
-.get-head,.head-contact{
+.get-head,
+.head-contact {
     color: black;
-    font-weight: 600;
+    font-weight: 700;
 }
-/* 
-.label{
-    display: block;
-} */
+
+.formm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-left {
+    display: inline;
+    float: right
+}
+
+form,
+.sub-new {
+    width: 76%;
+    margin: auto;
+}
+
+.sub-new {
+    padding-top: 150px;
+}
+
+.input>input,
+.drop {
+    border: 2px solid #007E85;
+    background-color: transparent;
+    color: black;
+}
 
 
+.input {
+    margin-top: 2em;
+}
 
+.button {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.submit-btnn {
+    background-color: #007E85;
+    padding: 11px 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: none;
+    border-radius: 7px;
+    color: white;
+
+
+}
+
+.drop {
+    width: 100%;
+    padding: 6px;
+    border-radius: 7px;
+
+}
+
+.subs-heading {
+    text-align: center;
+    font-weight: 700;
+}
+
+.new {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+
+.subs-button {
+    padding: 7px 23px;
+    border-radius: 30px;
+    background-color: #007E85;
+    color: #ffff;
+    border: none;
+
+}
+
+.subs-input {
+    padding: 7px 165px 7px 28px;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+footer{
+    background-color: black;
+    color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+footer ul{
+    list-style: none;
+}
+
+.foot-head{
+    font-weight: 700;
+
+}
+
+.container-xxl {
+    background-color: orange;
+}
+
+.main {
+    background-color: red;
+} 
+
+.foot1{
+    width: 253px;
+}
+
+.foot-product{
+    width: 120px;
+}
 
 
 
@@ -347,7 +489,17 @@ nav {
 
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 1130px) and (min-width: 860px) {
+@media only screen and (max-width: 1130px) and (min-width: 864px) {
+    .reason-img>img {
+        width: 340px;
+    }
+
+    .reason-main {
+        margin-left: 0;
+        gap: 30px;
+
+    }
+
     .secondText {
         width: 78vh;
         margin-top: 104px;
@@ -381,7 +533,16 @@ nav {
     }
 }
 
-@media only screen and (max-width: 860px) and (min-width:760px) {
+@media only screen and (max-width: 864px) and (min-width:760px) {
+    .reason-main {
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .reason-img>img {
+        width: 340px;
+    }
+
     .secondText {
         width: 78vh;
         margin-top: 104px;
@@ -447,6 +608,27 @@ nav {
 }
 
 @media only screen and (max-width: 760px) and (min-width:550px) {
+    .reason-img>img {
+        width: 440px;
+    }
+
+    .Started {
+        margin-left: 30px;
+    }
+
+    .reason-main {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-left: 0;
+
+    }
+
+    .form {
+        width: 92%;
+        margin: auto;
+    }
+
     .secondText {
         /* width: 78vh; */
         margin-top: 104px;
@@ -464,6 +646,8 @@ nav {
         margin-left: 134px;
 
     }
+
+
 
     .img24-7,
     .pro-img {
@@ -533,9 +717,34 @@ nav {
 
 
 @media only screen and (max-width:550px) and (min-width:475px) {
+    .reason-img>img {
+        width: 440px;
+    }
+
+    .Started {
+        margin-left: 30px;
+    }
+
+    .reason-main {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-left: 0;
+
+    }
+
+    .form {
+        width: 89%;
+        margin: auto;
+    }
 
     .before {
         display: none;
+    }
+
+    .form-width {
+        display: flex;
+        flex-direction: column;
     }
 
     .secondText {
@@ -623,7 +832,58 @@ nav {
 }
 
 
-@media only screen and (max-width:475px) and (min-width:300px) {
+@media only screen and (max-width:475px) and (min-width:294px) {
+    .btnn {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .reason-heading,
+    .reason-text p {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .reason-text {
+        font-size: 14px;
+
+
+    }
+
+    .reason-text h2 {
+        font-size: 18px;
+    }
+
+    .reason-img>img {
+        width: 260px;
+    }
+
+    .Started {
+       
+        width: 200px;
+    }
+
+    .reason-main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+
+    }
+
+    .form {
+        width: 96%;
+        margin: auto;
+    }
+
+    .form-width {
+        display: flex;
+        flex-direction: column;
+    }
+
     .secondText {
         /* width: 78vh; */
         margin-top: 104px;
@@ -657,9 +917,9 @@ nav {
     }
 
     .pro-img {
-        width: 103px;
-        right: 192px;
-        bottom: 9px;
+        width: 95px;
+        right: 168px;
+        bottom: 0px;
     }
 
     .second-main {
@@ -674,19 +934,19 @@ nav {
     }
 
     .img24-7 {
-        left: 194px;
-        top: 130px;
+        left: 166px;
+        top: 140px;
         padding: 6px 10px;
         width: 96px;
     }
 
     .doctor-img,
     .vector {
-        width: 227px;
+        width: 216px;
     }
 
     .doctor-img {
-        margin-left: 72px;
+        margin-left: 35px;
     }
 
     .btn-search {
@@ -718,5 +978,9 @@ nav {
 
     .numbers-main {
         gap: 220px;
+    }
+
+    .submit-btnn {
+        width: 200px;
     }
 }
