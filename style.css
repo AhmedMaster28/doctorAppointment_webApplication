@@ -391,38 +391,37 @@ form,
     border-radius: 30px;
     border: 1px solid gray;
 }
-footer{
-    background-color: black;
+
+footer {
+    background-color: #007E85;
     color: #ffff;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 3em;
     padding-top: 6em;
-    padding-bottom: 6em;
+    padding-bottom: 6em
 }
-footer ul{
+
+footer ul {
     list-style: none;
 }
 
-.foot-head{
+.foot-head {
     font-weight: 700;
-
 }
+
+.foot-para-ex {
+    display: none;
+    width: 100%;
+}
+
 /* 
-.container-xxl {
-    background-color: orange;
-}
-
-.main {
-    background-color: red;
-}  */
-
-.foot1{
+.foot1 {
     width: 253px;
-}
+} */
 
-.foot-product{
+.foot-product {
     width: 120px;
 }
 
@@ -490,6 +489,11 @@ footer ul{
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1130px) and (min-width: 864px) {
+
+    .foot1 {
+        width: 253px;
+    }
+
     .reason-img>img {
         width: 340px;
     }
@@ -533,7 +537,11 @@ footer ul{
     }
 }
 
-@media only screen and (max-width: 864px) and (min-width:760px) {
+@media only screen and (max-width: 864px) and (min-width:768px) {
+    .foot1 {
+        width: 253px;
+    }
+
     .reason-main {
         margin-left: 0;
         gap: 20px;
@@ -562,10 +570,6 @@ footer ul{
         bottom: 24px;
     }
 
-    .img24-7 {
-        left: 208px;
-    }
-
     .doc-search>input {
         padding: 10px 4px;
         width: 144px;
@@ -582,13 +586,14 @@ footer ul{
     }
 
     .img24-7 {
-        left: 155px;
+        left: 185px;
         top: 37px;
     }
 
     .doctor-img,
     .vector {
         width: 290px;
+        margin-left: 33px;
     }
 
     .btn-search {
@@ -607,7 +612,47 @@ footer ul{
     }
 }
 
-@media only screen and (max-width: 760px) and (min-width:550px) {
+@media only screen and (max-width:766px) and (min-width:550px) {
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot1 {
+        width: auto;
+    }
+
+    .foot-para {
+        display: none;
+    }
+
+    .foot-para-ex {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width:550px) {
+
+    .subs-input {
+        width: 100%;
+        padding: 7px 0px 7px 8px;
+
+    }
+
+    .subs-button {
+        width: 100%;
+    }
+
+    .new {
+        flex-direction: column;
+    }
+
+
     .reason-img>img {
         width: 440px;
     }
@@ -618,7 +663,7 @@ footer ul{
 
     .reason-main {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         margin-left: 0;
 
@@ -717,6 +762,39 @@ footer ul{
 
 
 @media only screen and (max-width:550px) and (min-width:475px) {
+    .subs-input {
+        width: 100%;
+        padding: 7px 0px 7px 8px;
+
+    }
+
+    .subs-button {
+        width: 100%;
+    }
+
+    .new {
+        flex-direction: column;
+    }
+
+    .foot1 {
+        width: auto;
+    }
+
+    .foot-para {
+        display: none;
+    }
+
+    .foot-para-ex {
+        display: block !important;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
     .reason-img>img {
         width: 440px;
     }
@@ -833,6 +911,39 @@ footer ul{
 
 
 @media only screen and (max-width:475px) and (min-width:294px) {
+    .subs-input {
+        width: 100%;
+        padding: 7px 0px 7px 8px;
+
+    }
+
+    .subs-button {
+        width: 100%;
+    }
+
+    .new {
+        flex-direction: column;
+    }
+
+    .foot1 {
+        width: auto;
+    }
+
+    .foot-para {
+        display: none;
+    }
+
+    .foot-para-ex {
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
     .btnn {
         flex-direction: column;
         align-items: center;
@@ -862,7 +973,7 @@ footer ul{
     }
 
     .Started {
-       
+
         width: 200px;
     }
 
